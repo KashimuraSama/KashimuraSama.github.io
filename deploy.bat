@@ -1,3 +1,6 @@
+@echo off
+@REM 在node.js V17以前一些可以正常运行的的应用程序,但是在 V17 版本可能会抛出以下异常
+set NODE_OPTIONS=--openssl-legacy-provider
 
 rem 生成静态文件
 npm run build
